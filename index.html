@@ -6,27 +6,29 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script> 
 </head>
-<body class="bg-gray-100 bg-[url('dogimage.jpg')] bg-no-repeat bg-cover bg-center bg-fixed">
+<body class="bg-gray-100 bg-[url('/dogimage.jpg')] bg-no-repeat bg-cover bg-center bg-fixed">
 <div class="justify-center flex">
-    <div class="w-1/2  mt-5 p-5 rounded-sm outline-2 outline-offset-2 shadow-2xl inset-shadow-2xs inset-shadow-black" >
+    <div class="w-1/2 mt-5 p-5 rounded-sm outline-2 outline-offset-2 shadow-2xl shadow-black shadow-inner">
         <h1 class="text-white font-bold text-2xl">Box Model</h1>
-        <p class="text-white leading-15">This box demonstrates the property of the box model using tailwindcss</p>
+        <p class="text-white leading-relaxed">This box demonstrates the property of the box model using Tailwind CSS</p>
+
         <div class="p-4 bg-white m-4 rounded-sm">
             <h1 class="font-bold">Padding</h1>
-            <p>Space between the content and the border of an element.
-            </p>
+            <p>Space between the content and the border of an element.</p>
         </div>
-        <div class="bg-white p-4 m-3 rounded-sm border-4  border-dashed border-blue-400">
+
+        <div class="bg-white p-4 m-3 rounded-sm border-4 border-dashed border-blue-400">
             <h1 class="font-bold">Border</h1>
             <p>A line surrounding the padding and content.</p>
         </div>
-        <div class="bg-white p-4 m-3 rounded-sm ">
+
+        <div class="bg-white p-4 m-3 rounded-sm">
             <h1 class="font-bold">Margin</h1>
             <p>Space outside the border, separating the element from others.</p>
         </div>
-        <div class="bg-white p-4 m-3 rounded-sm w-64 h-32 flex">
 
-            <div class="font-bold"> Width & Height</div>
+        <div class="bg-white p-4 m-3 rounded-sm w-64 h-32 flex flex-col">
+            <div class="font-bold">Width & Height</div>
             <div>Defines the size of an element.</div>
         </div>
     </div>
